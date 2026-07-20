@@ -1286,45 +1286,6 @@
             gap: 16px;
         }
 
-        /* Sticky and Floating Action Elements (Conversion Boosters) */
-        .sticky-actions-container {
-            position: fixed;
-            bottom: 24px;
-            right: 24px;
-            display: flex;
-            flex-direction: column;
-            gap: 12px;
-            z-index: 999;
-        }
-
-        .sticky-btn {
-            width: 60px;
-            height: 60px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: var(--white);
-            box-shadow: var(--shadow-lg);
-            cursor: pointer;
-            transition: var(--transition);
-            border: none;
-            position: relative;
-        }
-
-        .sticky-btn:hover {
-            transform: scale(1.1) rotate(5deg);
-        }
-
-        .sticky-whatsapp {
-            background-color: #25D366;
-        }
-
-        .sticky-whatsapp svg {
-            width: 32px;
-            height: 32px;
-        }
-
         /* Floating Call Now Button (Mobile Only) */
         .floating-call-bar {
             position: fixed;
@@ -1784,14 +1745,9 @@
                 gap: 24px;
             }
 
-            /* Floating Call/WA bar & Sticky elements */
             .floating-call-bar {
                 display: grid;
                 padding-bottom: max(10px, env(safe-area-inset-bottom, 0px));
-            }
-            .sticky-actions-container {
-                bottom: calc(75px + env(safe-area-inset-bottom, 0px));
-                right: 16px;
             }
             .enquiry-toast {
                 bottom: calc(75px + env(safe-area-inset-bottom, 0px));
@@ -2870,12 +2826,6 @@
     </footer>
 
     <!-- Sticky elements (Conversion Boosters) -->
-    <div class="sticky-actions-container">
-        <!-- Sticky WhatsApp Button -->
-        <a href="https://wa.me/601123456789?text=Hi%20Semenyih%20CCTV%20Aircond%2C%20saya%20berminat%20tahu%20pakej%20pemasangan." target="_blank" class="sticky-btn sticky-whatsapp" aria-label="Sembang WhatsApp">
-            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.031 6.172c-2.32 0-4.574 1.102-5.72 2.985a5.932 5.932 0 0 0-.695 2.766c0 1.141.3 2.25.867 3.227l-.926 3.38 3.477-.91a5.904 5.904 0 0 0 2.997.814h.002c2.322 0 4.575-1.103 5.722-2.986a5.932 5.932 0 0 0 .693-2.766c-.002-3.253-2.656-5.91-5.916-5.91zm3.504 8.321c-.192.541-1.11 1.066-1.534 1.121-.383.05-1.157.126-2.697-.481-1.967-.775-3.203-2.756-3.302-2.888-.1-.132-.733-.975-.733-1.86 0-.884.462-1.32.627-1.485.165-.165.363-.206.485-.206.121 0 .243.002.346.006.107.004.25-.041.392.298.146.347.5 1.218.543 1.307.043.089.072.193.013.31-.059.118-.088.193-.177.297-.089.103-.186.23-.265.31-.088.089-.18.186-.077.363.102.176.452.746.969 1.206.666.593 1.229.776 1.405.864.177.089.28.074.383-.044.103-.118.449-.523.568-.702.119-.177.237-.148.397-.089.16.059 1.015.479 1.192.568.177.089.295.133.339.207.043.074.043.43-.149.971z"/></svg>
-        </a>
-    </div>
 
     <!-- Floating Call/WA bar (Mobile Only) -->
     <div class="floating-call-bar">
